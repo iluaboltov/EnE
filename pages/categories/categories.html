@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E&E</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="nav-wrapper">
+        <img class="logo" src="../../images/logo.jpg" alt="">
+        <nav>
+            <ul>
+                <li class="logo-text"><h1><a href="../home/home.html">Category</a></h1></li>
+                <li>
+                    <ul class="navigation-list">
+                        <li><a href="../home/home.html">Home</a></li>
+                        <li><a href="../categories/categories.html">Category</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../feedback/feedback.html">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+<!--    <section class="category-list">-->
+<!--        <div class="divH2"><h2>Available Categories</h2></div>-->
+<!--        <div class="categoryTopics">-->
+<!--            <div><a href="">Software Vulnerabilities</a></div>-->
+<!--            <div><a href="">Malware Attacks</a></div>-->
+<!--            <div><a href="">Phishing Attacks</a></div>-->
+<!--            <div><a href="">Zero-Day Exploits</a></div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section class="gallery">
+        <div class="container">
+            <div class="grid">
+                <div class="column-12 column-4" onclick="goTo('https://jfrog.com/devops-tools/article/software-vulnerability/')">
+                    <figure class="img-container">
+                        <img src="https://www.appstudio.ca/blog/wp-content/uploads/2021/06/Software-Vulnerabilities.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="title">Software Vulnerabilities</h2>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="title">Software Vulnerabilities</h2>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-12 column-4" onclick="goTo('https://www.cyberark.com/what-is/malware/')">
+                    <figure class="img-container">
+                        <img src="https://www.leachagency.com/wp-content/uploads/2019/12/malware-cyber-attacks-16x9-1.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="title">Malware Attacks</h2>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="title">Malware Attacks</h2>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-12 column-4" onclick="goTo('https://www.cloudflare.com/learning/access-management/phishing-attack/')">
+                    <figure class="img-container">
+                        <img src="https://www.loginradius.com/blog/static/95a76cd39013c99382f929d1f1187775/84a3b/phishing-for-identity.jpg">
+                        <figcaption class="img-content">
+                            <h2 class="title">Phishing Attacks</h2>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="title">Phishing Attacks</h2>
+                        </span>
+                    </figure>
+                </div>
+                <div class="column-12 column-4" onclick="goTo('https://www.imperva.com/learn/application-security/zero-day-exploit/')">
+                    <figure class="img-container">
+                        <img src="https://www.checkpoint.com/wp-content/uploads/what-is-zero-day-attack-icon.jpg" />
+                        <figcaption class="img-content">
+                            <h2 class="title">Zero-Day Exploits</h2>
+                        </figcaption>
+                        <span class="img-content-hover">
+                            <h2 class="title">Zero-Day Exploits</h2>
+                        </span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="social-media">
+        <a href="#" class="social-icon"><img src="../../images/facebook.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="../../images/twitter-sign.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="../../images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#" class="social-icon"><img src="../../images/instagram.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2023 Explore & Exploit</p>
+</footer></body>
+<script>
+    const imgContent = document.querySelectorAll('.img-content-hover');
+
+    function showImgContent(e) {
+        for(let i = 0; i < imgContent.length; i++) {
+            let x = e.pageX;
+            let y = e.pageY;
+            imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+        }
+    }
+
+    let goTo = (href) =>{
+        window.location.href = href
+    }
+    document.addEventListener('mousemove', showImgContent);
+</script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E&E</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="nav-wrapper">
+        <img class="logo" src="../../images/logo.jpg" alt="">
+        <nav>
+            <ul>
+                <li class="logo-text"><h1><a href="../home/home.html">Contact</a></h1></li>
+                <li>
+                    <ul class="navigation-list">
+                        <li><a href="../home/home.html">Home</a></li>
+                        <li><a href="../categories/categories.html">Category</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../feedback/feedback.html">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <section class="contact-wrapper">
+        <div class="contact-form">
+            <div class="contact-label">
+                <span>CONTACT</span>
+                <span>US</span>
+                <span>NOW</span>
+            </div>
+            <div class="contact-func">
+                <form action="mailto:bp35572@gmail.com" method="post">
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="name" placeholder="Joe Land" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="yourmail@email.com" required>
+
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message will be here" required></textarea>
+
+                    <label for="file">Attach file:</label>
+                    <input type="file" id="file" name="file" placeholder="Browse" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div>
+        <a href="#" class="social-icon"><img src="../../images/facebook.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="../../images/twitter-sign.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="../../images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#" class="social-icon"><img src="../../images/instagram.png" alt="Instagram"></a>
+    </div>
+    <div>
+        <p>&copy; 2023 Explore & Exploit</p>
+    </div>
+</footer>
+</body>
+</html>

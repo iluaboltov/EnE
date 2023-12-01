@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E&E</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-wrapper">
+    <img class="logo" src="../../images/logo.jpg" alt="">
+    <nav>
+      <ul>
+        <li class="logo-text"><h1><a href="../home/home.html">Feedback</a></h1></li>
+        <li>
+          <ul class="navigation-list">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../categories/categories.html">Category</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../feedback/feedback.html">Feedback</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<article>
+
+  <div class="container">
+
+    <section class="get-in-touch">
+      <h1 class="title">Get in touch</h1>
+      <form action="mailto:bp35572@gmail.com" method="post" class="contact-form row">
+        <div class="form-field">
+          <input id="name" class="input-text js-input" type="text" required>
+          <label id="nameLabel" class="label" for="name">Name</label>
+        </div>
+        <div class="form-field">
+          <input id="email" class="input-text js-input" type="email" required>
+          <label id="emailLabel" class="label" for="email">E-mail</label>
+        </div>
+        <div class="form-field">
+          <input id="message" class="input-text js-input" type="text" required>
+          <label id="messageLabel" class="label" for="message">Message</label>
+        </div>
+        <div class="form-field">
+          <input class="submit-btn" type="submit" value="Submit">
+        </div>
+      </form>
+    </section>
+
+  </div>
+
+</article>
+
+<footer>
+  <div>
+    <a href="#" class="social-icon"><img src="../../images/facebook.png" alt="Facebook"></a>
+    <a href="#" class="social-icon"><img src="../../images/twitter-sign.png" alt="Twitter"></a>
+    <a href="#" class="social-icon"><img src="../../images/linkedin.png" alt="LinkedIn"></a>
+    <a href="#" class="social-icon"><img src="../../images/instagram.png" alt="Instagram"></a>
+  </div>
+  <div>
+    <p>&copy; 2023 Explore & Exploit</p>
+  </div>
+</footer>
+<script>
+  let emailInput = document.getElementById("email")
+  let emailLabel = document.getElementById("emailLabel")
+  let nameInput = document.getElementById("name")
+  let nameLabel = document.getElementById("nameLabel")
+  let messageInput = document.getElementById("message")
+  let messageLabel = document.getElementById("messageLabel")
+
+  emailInput.addEventListener( 'change', ()=>{
+    if(emailInput.value === ""){
+      emailLabel.classList.remove("filled")
+    }
+    else{
+      emailLabel.classList.add("filled")
+    }
+  })
+  nameInput.addEventListener( 'change', ()=>{
+    if(nameInput.value === ""){
+      nameLabel.classList.remove("filled")
+    } else{
+      nameLabel.classList.add("filled")
+    }
+  })
+  messageInput.addEventListener( 'change', ()=>{
+    if(messageInput.value === ""){
+      messageLabel.classList.remove("filled")
+    }
+    else{
+      messageLabel.classList.add("filled")
+    }
+  })
+</script>
+</body>
+</html>

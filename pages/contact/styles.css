@@ -1,0 +1,201 @@
+/* Reset some default styles */
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700"); /* Reset some default styles */
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+/* Basic styling */
+body {
+    font-family: "Barlow", sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.5;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    min-height: 14vh;
+    background-color: #073393;
+    color: #fff;
+    padding: 0.4rem 1rem 1rem 1rem;
+}
+
+header a{
+    margin: auto;
+    align-self: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 5vh;
+    align-items: center;
+    background-color: #073393;
+    color: #fff;
+    padding: 1rem;
+}
+footer > div{
+    width: 12rem;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px;
+}
+
+.nav-wrapper{
+    margin: auto;
+    width: 100%;
+}
+nav{
+    justify-content: center;
+}
+.logo-text{
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 4em;
+}
+.nav-wrapper .logo{
+    position: absolute;
+}
+
+.navigation-list{
+    display: flex;
+    width: 100%;
+}
+.navigation-list > li{
+    padding: 1em 1.6em 0 0;
+}
+.navigation-list > li:last-child{
+    padding: 1em 0 0 0;
+}
+.nav-wrapper > nav > ul > li{
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+nav{
+    display: flex;
+}
+
+main {
+    padding: 2rem;
+}
+a{
+    transition: all 0.2s ease;
+}
+a:hover {
+    color: #696868;
+}
+a.active {
+    color: #696868;
+}
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    color: #ddd;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #00317b;
+    padding: 1rem;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    background: #002d71;
+    width: 75%;
+    padding: 0.5rem;
+    color: #ddd;
+    border: none;
+    border-bottom: 2px solid #759fb7;
+    font-size: 1rem;
+    resize: none;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    width: 75%;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.categoryTopics{
+    display: flex;
+    justify-content: space-around;
+}
+
+a > h1{
+    color: #f4f4f4;
+}
+.contact-label{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-self: center;
+    width: 15vw;
+    height: 20vh;
+    justify-content: center;
+}
+.contact-label::after{
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 4em;
+    height: 0.5em;
+    top: 8.5em;
+    left: 1px;
+    background-color: #a3b6e5;
+}
+.contact-label > span{
+    font-size: 2em;
+    width: 10vh;
+}
+.contact-func{
+    width: 50%;
+}
